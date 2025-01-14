@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Temple Color Palette</title>
+    <link rel="stylesheet" href="minecraft-palette.css">
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            background: var(--night-blue);
+            color: var(--light-pink);
+        }
+
+        .palette-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .color-block {
+            padding: 20px;
+            border-radius: 4px;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .gradient-section {
+            margin-top: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--blossom-pink);
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px var(--lantern-glow);
+        }
+
+        .color-name {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .color-value {
+            font-family: monospace;
+            background: rgba(0,0,0,0.2);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minecraft Temple Color Palette</h1>
+    
+    <div class="palette-container">
+        <!-- Primary Colors -->
+        <div class="color-block" style="background: var(--night-blue)">
+            <div class="color-name">Night Blue</div>
+            <div class="color-value">#2A2D45</div>
+        </div>
+        <div class="color-block" style="background: var(--temple-black)">
+            <div class="color-name">Temple Black</div>
+            <div class="color-value">#1A1A1A</div>
+        </div>
+        <div class="color-block" style="background: var(--blossom-pink)">
+            <div class="color-name">Blossom Pink</div>
+            <div class="color-value">#FFD6E0</div>
+        </div>
+        <div class="color-block" style="background: var(--lantern-glow)">
+            <div class="color-name">Lantern Glow</div>
+            <div class="color-value">#FF9B5E</div>
+        </div>
+        <div class="color-block" style="background: var(--deep-red)">
+            <div class="color-name">Deep Red</div>
+            <div class="color-value">#8B3A3A</div>
+        </div>
+
+        <!-- Secondary Colors -->
+        <div class="color-block" style="background: var(--light-pink)">
+            <div class="color-name">Light Pink</div>
+            <div class="color-value">#FFE9ED</div>
+        </div>
+        <div class="color-block" style="background: var(--shadow-purple)">
+            <div class="color-name">Shadow Purple</div>
+            <div class="color-value">#3D3B54</div>
+        </div>
+        <div class="color-block" style="background: var(--warm-yellow)">
+            <div class="color-name">Warm Yellow</div>
+            <div class="color-value">#FFB86C</div>
+        </div>
+        <div class="color-block" style="background: var(--stone-grey)">
+            <div class="color-name">Stone Grey</div>
+            <div class="color-value">#4A4A4A</div>
+        </div>
+        <div class="color-block" style="background: var(--dark-shadow)">
+            <div class="color-name">Dark Shadow</div>
+            <div class="color-value">#232323</div>
+        </div>
+    </div>
+
+    <div class="gradient-section palette-container">
+        <div class="color-block night-gradient-bg">
+            <div class="color-name">Night Gradient</div>
+            <div class="color-value">night-blue → shadow-purple</div>
+        </div>
+        <div class="color-block blossom-gradient-bg">
+            <div class="color-name">Blossom Gradient</div>
+            <div class="color-value">blossom-pink → light-pink</div>
+        </div>
+        <div class="color-block temple-gradient-bg">
+            <div class="color-name">Temple Gradient</div>
+            <div class="color-value">stone-grey → temple-black</div>
+        </div>
+        <div class="color-block glow-gradient-bg">
+            <div class="color-name">Glow Gradient</div>
+            <div class="color-value">lantern-glow → warm-yellow</div>
+        </div>
+    </div>
+</body>
+</html>

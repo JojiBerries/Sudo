@@ -1,0 +1,34 @@
+:root {
+  /* Primary Colors */
+  --night-blue: #2A2D45;     /* Deep navy blue for sky/shadows */
+  --temple-black: #1A1A1A;   /* Dark color for temple structure */
+  --blossom-pink: #FFD6E0;   /* Soft pink for cherry blossoms */
+  --lantern-glow: #FF9B5E;   /* Warm orange for lighting effects */
+  --deep-red: #8B3A3A;       /* Burgundy for darker temple details */
+
+  /* Secondary/Accent Colors */
+  --light-pink: #FFE9ED;     /* Lighter variation of cherry blossoms */
+  --shadow-purple: #3D3B54;  /* Purple tint in shadows */
+  --warm-yellow: #FFB86C;    /* Warmer variation of lantern glow */
+  --stone-grey: #4A4A4A;     /* Medium grey for temple details */
+  --dark-shadow: #232323;    /* Darkest shadows */
+
+  /* Gradient Combinations */
+  --night-gradient: linear-gradient(to bottom, var(--night-blue), var(--shadow-purple));
+  --blossom-gradient: linear-gradient(to right, var(--blossom-pink), var(--light-pink));
+  --temple-gradient: linear-gradient(to bottom, var(--stone-grey), var(--temple-black));
+  --glow-gradient: linear-gradient(to bottom, var(--lantern-glow), var(--warm-yellow));
+}
+
+/* Example usage classes */
+.night-bg { background-color: var(--night-blue); }
+.temple-text { color: var(--temple-black); }
+.blossom-accent { color: var(--blossom-pink); }
+.lantern-glow { color: var(--lantern-glow); }
+.deep-red-accent { color: var(--deep-red); }
+
+/* Gradient classes */
+.night-gradient-bg { background: var(--night-gradient); }
+.blossom-gradient-bg { background: var(--blossom-gradient); }
+.temple-gradient-bg { background: var(--temple-gradient); }
+.glow-gradient-bg { background: var(--glow-gradient); }
