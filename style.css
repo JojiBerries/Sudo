@@ -28,8 +28,11 @@ body {
 
 /* Navigation Styles */
 .minecraft-nav {
-    background: rgba(26, 26, 26, 0.6);
-    border-bottom: 4px solid rgba(26, 26, 26, 0.4);
+    background: linear-gradient(
+        to bottom,
+        rgba(42, 45, 69, 0.6),
+        rgba(61, 59, 84, 0.6)
+    );
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -107,14 +110,14 @@ body {
 
 /* Minecraft Button */
 .minecraft-button {
-    background: var(--lantern-glow);
+    background: rgba(139, 58, 58, 0.8); /* Deep red with transparency */
     border: none;
-    color: var(--temple-black);
+    color: var(--light-pink);
     padding: 1rem 2rem;
     font-size: 1.2rem;
     cursor: pointer;
     position: relative;
-    border: 3px solid var(--temple-black);
+    border: 3px solid var(--deep-red);
     transition: all 0.2s ease;
 }
 
@@ -125,14 +128,14 @@ body {
     left: -3px;
     right: -3px;
     bottom: -3px;
-    background: var(--warm-yellow);
+    background: var(--deep-red);
     z-index: -1;
     transform: translateY(5px);
 }
 
 .minecraft-button:hover {
     transform: translateY(2px);
-    background: var(--warm-yellow);
+    background: rgba(139, 58, 58, 0.9); /* Slightly less transparent on hover */
 }
 
 .minecraft-button:active {
